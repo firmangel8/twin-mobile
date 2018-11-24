@@ -46,8 +46,6 @@ export default class HomeScreen extends Component {
 
   
   async componentDidMount(){
-    // console.ignoredYellowBox = ["Warning: Each", "Warning: Failed", "Warning: Can't call"];
-
     const user_name = await AsyncStorage.getItem('user_name')
     const user_id = await AsyncStorage.getItem('user_id')
 
@@ -55,6 +53,7 @@ export default class HomeScreen extends Component {
       user_name: user_name,
       user_id: user_id
     })
+    //initial GPS permission acceptances 
     const granted = await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
       {
@@ -67,6 +66,7 @@ export default class HomeScreen extends Component {
     } else {
       console.log("ACCESS YOUR LOCATION permission denied");
     }
+    //end initial GPS permission acceptances
 
     token = await AsyncStorage.getItem("fs-token");
     await fetch("https://twin-web-app.appspot.com/api/company/trip/?user_id="+user_id,
