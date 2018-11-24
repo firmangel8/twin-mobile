@@ -42,11 +42,11 @@ export class LoginAnimation extends Component {
         alert("You're not registered yet");
         this.setState({ isLoading: false });
       }else{
+        //adding to ensure replacement data initial apps after sign-in
+        //contains fs-token, user_name, user_id (asynstorage wrapper)
         AsyncStorage.setItem('fs-token', data.token)
         AsyncStorage.setItem("user_name", data.user.name);
         AsyncStorage.setItem("user_id", data.user.id.toString())
-        // AsyncStorage.setItem('fs-user-id', data.user.id);
-        // AsyncStorage.setItem('fs-user-name', data.user.name);
         
         this.setState({ isLoading: true });
         setTimeout(() => this.setState({
