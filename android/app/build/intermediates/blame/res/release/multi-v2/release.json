@@ -734,38 +734,6 @@
             ]
         },
         {
-            "outputFile": "/home/pagedev/dev-android/vinson-apps/fxapps/android/app/build/intermediates/res/merged/release/values-fr-rCA_values-fr-rCA.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/pagedev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f0a91dfc97756b74c678cad1558309c9/res/values-fr-rCA/values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,331,442,529,645,775,858,938,1034,1144,1256,1359,1470,1577,1679,1838,1937",
-                        "endColumns": "110,114,110,86,115,129,82,79,95,109,111,102,110,106,101,158,98,85",
-                        "endOffsets": "211,326,437,524,640,770,853,933,1029,1139,1251,1354,1465,1572,1674,1833,1932,2018"
-                    }
-                },
-                {
-                    "source": "/home/pagedev/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cc4bfac8818187a1911fd4e7fced5aa9/res/values-fr-rCA/values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2023",
-                        "endColumns": "100",
-                        "endOffsets": "2119"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/pagedev/dev-android/vinson-apps/fxapps/android/app/build/intermediates/res/merged/release/values_values.arsc.flat",
             "map": [
                 {
@@ -878,6 +846,38 @@
                         "endLines": "29,500,501,511,518,519,554,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580,581,582,583,594,1658,1661,1664,1667,1671,1675,1862,1865,1868,1871,1945,1975,1982,1989,1992,1995,1998,2004,2120",
                         "endColumns": "62,47,47,42,53,47,82,93,102,112,161,113,106,111,102,120,125,190,107,112,112,107,111,128,110,92,131,124,97,98,113,87,72,70,80,10,12,12,12,12,10,10,12,12,12,12,25,34,10,10,10,10,12,12,10",
                         "endOffsets": "2121,43049,43097,43545,43831,43879,46394,46532,46635,46748,46910,47024,47131,47243,47346,47467,47593,47784,47892,48005,48118,48226,48338,48467,48578,48671,48803,48928,49026,49125,49239,49327,49400,49471,49552,50366,118437,118628,118823,119006,119208,119414,132600,132789,132988,133175,140101,142292,142710,143088,143265,143444,143627,143992,152959"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/pagedev/dev-android/vinson-apps/fxapps/android/app/build/intermediates/res/merged/release/values-fr-rCA_values-fr-rCA.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/pagedev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f0a91dfc97756b74c678cad1558309c9/res/values-fr-rCA/values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,331,442,529,645,775,858,938,1034,1144,1256,1359,1470,1577,1679,1838,1937",
+                        "endColumns": "110,114,110,86,115,129,82,79,95,109,111,102,110,106,101,158,98,85",
+                        "endOffsets": "211,326,437,524,640,770,853,933,1029,1139,1251,1354,1465,1572,1674,1833,1932,2018"
+                    }
+                },
+                {
+                    "source": "/home/pagedev/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cc4bfac8818187a1911fd4e7fced5aa9/res/values-fr-rCA/values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2023",
+                        "endColumns": "100",
+                        "endOffsets": "2119"
                     }
                 }
             ]

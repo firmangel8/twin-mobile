@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Nov 16 15:58:07 WITA 2018
+#Mon Nov 26 16:41:55 WITA 2018
 5.base=/home/pagedev/dev-android/vinson-apps/fxapps/android/app/build/intermediates/transforms/mergeJniLibs/release/0
 22.path=lib/x86/libimagepipeline.so
 32.set=NATIVE_RESOURCE
