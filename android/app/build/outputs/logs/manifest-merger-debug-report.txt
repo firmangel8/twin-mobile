@@ -1,0 +1,157 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f0a91dfc97756b74c678cad1558309c9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/8201954389a3f2435f1f033e5c34b635/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b3e4ded8dcb844e5e231624098f9b72e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/3e46f33a7efb097ad12581e5aca1ba81/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3b011f0a0443ff65a413a4a51c244406/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/457c1b0bd7aa42144e97d2b6b231bfb4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cc4bfac8818187a1911fd4e7fced5aa9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/18090ba8d6262a453fa2a7dd582e21a3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/c96c24625eca812ba9712de62da79fbd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/1794f74f244ba211589a807c1a84f3d7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7491ce7153ec39ef76e3912bc42faacc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/61048206eb9ca584b1fcb61c2bbe08ff/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/82db82309b4deb119e8dc36ee5f3ef50/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /home/pagedev/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/92b2a37f80dd0e7d1b5062d081698d4d/AndroidManifest.xml:1:1-3:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/764ded30d701c7de8fec82fdd00ab4b5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/87bb5fac0658501831d54e01e52d6259/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/5f357a0ef4829e0e103e9e45251c9372/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/42c19ec3dfa87bcd5f23845fc536eb06/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/eb97b5801f6d161b4c7cf444ec92f0d6/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+	package
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:2:5-25
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:8:5-25:19
+MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/82db82309b4deb119e8dc36ee5f3ef50/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/82db82309b4deb119e8dc36ee5f3ef50/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /home/pagedev/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/92b2a37f80dd0e7d1b5062d081698d4d/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/pagedev/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/92b2a37f80dd0e7d1b5062d081698d4d/AndroidManifest.xml:2:3-17
+	android:label
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:10:7-39
+	android:icon
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:11:7-41
+	android:allowBackup
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:12:7-34
+	android:theme
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:13:7-38
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:9:7-38
+activity#com.fxapps.MainActivity
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:14:7-23:18
+	android:label
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:16:9-41
+	android:windowSoftInputMode
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:18:9-51
+	android:configChanges
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:17:9-79
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:15:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:19:9-22:25
+action#android.intent.action.MAIN
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:20:13-65
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:20:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:21:13-73
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:21:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:24:7-84
+	android:name
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:24:17-81
+uses-sdk
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f0a91dfc97756b74c678cad1558309c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f0a91dfc97756b74c678cad1558309c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/8201954389a3f2435f1f033e5c34b635/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/8201954389a3f2435f1f033e5c34b635/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b3e4ded8dcb844e5e231624098f9b72e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b3e4ded8dcb844e5e231624098f9b72e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/3e46f33a7efb097ad12581e5aca1ba81/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/3e46f33a7efb097ad12581e5aca1ba81/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3b011f0a0443ff65a413a4a51c244406/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3b011f0a0443ff65a413a4a51c244406/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/457c1b0bd7aa42144e97d2b6b231bfb4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/457c1b0bd7aa42144e97d2b6b231bfb4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cc4bfac8818187a1911fd4e7fced5aa9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/cc4bfac8818187a1911fd4e7fced5aa9/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/18090ba8d6262a453fa2a7dd582e21a3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/18090ba8d6262a453fa2a7dd582e21a3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/c96c24625eca812ba9712de62da79fbd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/c96c24625eca812ba9712de62da79fbd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/1794f74f244ba211589a807c1a84f3d7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/1794f74f244ba211589a807c1a84f3d7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7491ce7153ec39ef76e3912bc42faacc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7491ce7153ec39ef76e3912bc42faacc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/61048206eb9ca584b1fcb61c2bbe08ff/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/61048206eb9ca584b1fcb61c2bbe08ff/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/82db82309b4deb119e8dc36ee5f3ef50/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/82db82309b4deb119e8dc36ee5f3ef50/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/764ded30d701c7de8fec82fdd00ab4b5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/764ded30d701c7de8fec82fdd00ab4b5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/87bb5fac0658501831d54e01e52d6259/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/87bb5fac0658501831d54e01e52d6259/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/5f357a0ef4829e0e103e9e45251c9372/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/5f357a0ef4829e0e103e9e45251c9372/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/42c19ec3dfa87bcd5f23845fc536eb06/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/42c19ec3dfa87bcd5f23845fc536eb06/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/eb97b5801f6d161b4c7cf444ec92f0d6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/eb97b5801f6d161b4c7cf444ec92f0d6/AndroidManifest.xml:20:5-44
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
