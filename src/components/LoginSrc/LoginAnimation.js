@@ -36,7 +36,8 @@ export class LoginAnimation extends Component {
     })
     .then(resp => resp.json())
     .then(data => {
-      console.log(data.user.id)
+      // console.log(data.status)
+      // console.log(data.user.id)
       
       if (data.error === "Unauthorized") {
         alert("You're not registered yet");
