@@ -120,14 +120,6 @@ export default class AuthScreen extends Component {
           behavior={'padding'}
           style={[formStyle, styles.bottom]}
         >
-          {(visibleForm === 'SIGNUP') && (
-            <SignupForm
-              ref={(ref) => this.formRef = ref}
-              onLoginLinkPress={() => this._setVisibleForm('LOGIN')}
-              onSignupPress={signup}
-              isLoading={isLoading}
-            />
-          )}
           {(visibleForm === 'LOGIN') && (
             <LoginForm
               ref={(ref) => this.formRef = ref}
