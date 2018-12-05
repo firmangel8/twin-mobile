@@ -385,7 +385,7 @@ export default class HomeScreen extends Component {
 
     const loader = (
       <View style={styles.containerActivity}>
-        <ActivityIndicator size={100} style={styles.activityIndicator} color={'#fff'}/>
+        <ActivityIndicator size={100} style={styles.activityIndicator} color={'#fff'} animating={true}/>
       </View>
     );
 
