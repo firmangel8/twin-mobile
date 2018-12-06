@@ -134,6 +134,7 @@ export default class HomeScreen extends Component {
       console.log(resp);
       console.log(this.state.status.toString());
       // alert('Thanks to complete this destination')
+      // console.log(resp)
       if(statusParam==='complete'){
         Alert.alert(
           "Updating destination",
@@ -142,7 +143,7 @@ export default class HomeScreen extends Component {
             {
               text: "OK",
               onPress: () => {
-                this.handleTakeTrip(1);
+                this.handleTakeTrip(this.state.current_trip_id);
               }
             }
           ]
@@ -155,7 +156,7 @@ export default class HomeScreen extends Component {
             {
               text: "OK",
               onPress: () => {
-                this.handleTakeTrip(1);
+                this.handleTakeTrip(this.state.current_trip_id);
               }
             }
           ]
