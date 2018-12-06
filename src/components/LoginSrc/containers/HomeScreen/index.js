@@ -108,7 +108,23 @@ export default class HomeScreen extends Component {
     return true;
   }
 
+
   handleButton = async (id, statusParam) => {
+    //current position
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        console.log("lat => "+position.coords.latitude)
+        console.log("lng => " + position.coords.longitude);
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          error: null
+        });
+      },
+      error => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+    );
+    //end current position
     const user_id = await AsyncStorage.getItem("user_id");
     console.log(id)
     // console.log('handle here')
