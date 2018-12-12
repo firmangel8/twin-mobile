@@ -158,9 +158,9 @@ export default class HomeScreen extends Component {
           [
             {
               text: "OK",
-              onPress: () => {
-                this.handleTakeTrip(this.state.current_trip_id);
-              }
+              // onPress: () => {
+              //   this.handleTakeTrip(this.state.current_trip_id);
+              // }
             }
           ]
         );
@@ -171,9 +171,9 @@ export default class HomeScreen extends Component {
           [
             {
               text: "OK",
-              onPress: () => {
-                this.handleTakeTrip(this.state.current_trip_id);
-              }
+              // onPress: () => {
+              //   this.handleTakeTrip(this.state.current_trip_id);
+              // }
             }
           ]
         );
@@ -247,28 +247,7 @@ export default class HomeScreen extends Component {
     header: null,
   };
   render () {
-    
-    const actions = [{
-                        text: 'Accessibility',
-                        icon: require('../../../../assets/ic_accessibility_white.png'),
-                        name: 'bt_accessibility',
-                        position: 2
-                      }, {
-                        text: 'Language',
-                        icon: require('../../../../assets/ic_language_white.png'),
-                        name: 'bt_language',
-                        position: 1
-                      }, {
-                        text: 'Location',
-                        icon: require('../../../../assets/ic_room_white.png'),
-                        name: 'bt_room',
-                        position: 3
-                      }, {
-                        text: 'Video',
-                        icon: require('../../../../assets/ic_videocam_white.png'),
-                        name: 'bt_videocam',
-                        position: 4
-                  }];
+   
                   
     const dashboardRender = <View style={{ flex: 1 }}>
         <View style={{ flex: 1 }}>
@@ -338,14 +317,16 @@ export default class HomeScreen extends Component {
         </Header>
         <Content>
           <List>
-            <FlatList data={this.state.dataSourceDestination} renderItem={({ item }) => <ListItem thumbnail>
+            <FlatList extraData={this.state} data={this.state.dataSourceDestination} renderItem={({ item }) => <ListItem thumbnail>
                   <Body>
-                    <Text>{item.name}</Text>
+                    <Text>{item.name} {item.status}</Text>
                     <Text note numberOfLines={1}>
                       {item.address}
                     </Text>
                   </Body>
-                  <View style={{ paddingRight:30 }}>
+                  <View style={{ paddingRight: 30 }}>
+                    {console.log("rendered ID => " + item.id + "and status" + item.status)}
+                    
                     {item.status === "incomplete" 
                       ? <CheckBox checked={false} onPress={() => this.handleButton(item.id, "complete")} /> 
                       : <CheckBox checked={true} onPress={() => this.handleButton(item.id, "incomplete")} />}
@@ -367,9 +348,9 @@ export default class HomeScreen extends Component {
               <Body>
                 <Title>On the way location Manajemen..</Title>
               </Body>
-              <FloatingAction actions={actions} onPressItem={name => {
+              {/* <FloatingAction actions={actions} onPressItem={name => {
                   console.log('Your location : 8.162721716621 , -152.029210191')  ;
-                }} color="rgb(246, 36, 89)" />
+                }} color="rgb(246, 36, 89)" /> */}
             </Header>
             <Content>
               <List>
