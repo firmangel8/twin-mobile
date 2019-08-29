@@ -20,7 +20,8 @@ export class LoginAnimation extends Component {
    _simulateLogin = (username, password) => {
      this.setState({ isLoading: true });
     // console.log(username)
-    const url = "https://twin-web-app.appspot.com/api/login"
+    // const url = "https://twin-web-app.appspot.com/api/login"
+    const url = "http://35.198.221.40/login";
     fetch(url, {
       method: "POST",
       headers: {
@@ -36,7 +37,8 @@ export class LoginAnimation extends Component {
     })
     .then(resp => resp.json())
     .then(data => {
-      console.log(data.user.id)
+      // console.log(data.status)
+      // console.log(data.user.id)
       
       if (data.error === "Unauthorized") {
         alert("You're not registered yet");

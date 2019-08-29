@@ -4,6 +4,7 @@ ADDED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/And
 INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-vector-icons] /home/pagedev/dev-android/vinson-apps/fxapps/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f0a91dfc97756b74c678cad1558309c9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/8201954389a3f2435f1f033e5c34b635/AndroidManifest.xml:17:1-22:12
@@ -101,6 +102,8 @@ uses-sdk
 INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/pagedev/dev-android/vinson-apps/fxapps/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-vector-icons] /home/pagedev/dev-android/vinson-apps/fxapps/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/pagedev/dev-android/vinson-apps/fxapps/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.57.0] /home/pagedev/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/27d9160f7dc8c324924c4ace7699a3cc/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/pagedev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f0a91dfc97756b74c678cad1558309c9/AndroidManifest.xml:20:5-44

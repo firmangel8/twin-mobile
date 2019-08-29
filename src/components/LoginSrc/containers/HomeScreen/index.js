@@ -6,7 +6,7 @@ import {
   AsyncStorage,
   ActivityIndicator,
   FlatList,
-  PermissionsAndroid, Alert
+  PermissionsAndroid, Alert, BackHandler
 } from "react-native";
 import {
   Container,
@@ -20,7 +20,8 @@ import {
   Body,
   Right,
   Button,
-  Title
+  Title,
+  CheckBox,
 } from "native-base";
 import PropTypes from "prop-types";
 import { FloatingAction } from "react-native-floating-action";
@@ -93,13 +94,37 @@ export default class HomeScreen extends Component {
     .catch(error => {
       console.error(error);
     });
+
+     BackHandler.addEventListener("hardwareBackPress", this.handleBackPress);
   }
 
   componentWillUnmount() {
         // clearInterval(this.interval);
+        BackHandler.removeEventListener("hardwareBackPress", this.handleBackPress);
   }
 
+  handleBackPress = () => {
+    this.handleUpdateState("listingRender");
+    return true;
+  }
+
+
   handleButton = async (id, statusParam) => {
+    //current position
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        console.log("lat => "+position.coords.latitude)
+        console.log("lng => " + position.coords.longitude);
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          error: null
+        });
+      },
+      error => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+    );
+    //end current position
     const user_id = await AsyncStorage.getItem("user_id");
     console.log(id)
     // console.log('handle here')
@@ -125,6 +150,7 @@ export default class HomeScreen extends Component {
       console.log(resp);
       console.log(this.state.status.toString());
       // alert('Thanks to complete this destination')
+      // console.log(resp)
       if(statusParam==='complete'){
         Alert.alert(
           "Updating destination",
@@ -132,9 +158,9 @@ export default class HomeScreen extends Component {
           [
             {
               text: "OK",
-              onPress: () => {
-                this.handleTakeTrip(1);
-              }
+              // onPress: () => {
+              //   this.handleTakeTrip(this.state.current_trip_id);
+              // }
             }
           ]
         );
@@ -145,9 +171,9 @@ export default class HomeScreen extends Component {
           [
             {
               text: "OK",
-              onPress: () => {
-                this.handleTakeTrip(1);
-              }
+              // onPress: () => {
+              //   this.handleTakeTrip(this.state.current_trip_id);
+              // }
             }
           ]
         );
@@ -217,30 +243,11 @@ export default class HomeScreen extends Component {
     console.log('logout')
   }
 
-  static navigationOptions = { header: null };
+  static navigationOptions = {
+    header: null,
+  };
   render () {
-    
-    const actions = [{
-                        text: 'Accessibility',
-                        icon: require('../../../../assets/ic_accessibility_white.png'),
-                        name: 'bt_accessibility',
-                        position: 2
-                      }, {
-                        text: 'Language',
-                        icon: require('../../../../assets/ic_language_white.png'),
-                        name: 'bt_language',
-                        position: 1
-                      }, {
-                        text: 'Location',
-                        icon: require('../../../../assets/ic_room_white.png'),
-                        name: 'bt_room',
-                        position: 3
-                      }, {
-                        text: 'Video',
-                        icon: require('../../../../assets/ic_videocam_white.png'),
-                        name: 'bt_videocam',
-                        position: 4
-                  }];
+   
                   
     const dashboardRender = <View style={{ flex: 1 }}>
         <View style={{ flex: 1 }}>
@@ -268,10 +275,7 @@ export default class HomeScreen extends Component {
 
       
     const listingRender = <View style={{ flex: 1 }}>
-        <View style={{ flex: 0.4 }}>
-          <Image source={require("../../../../assets/dashboard.jpg")} resizeMode="cover" style={{ flex: 1, width: null, height: null }} />
-        </View>
-        <View style={{ flex: 0.6, backgroundColor: "#D2E9F7" }}>
+        <View style={{ flex: 1, backgroundColor: "#D2E9F7" }}>
           <Container>
             <Header>
               <Body>
@@ -281,9 +285,9 @@ export default class HomeScreen extends Component {
             <Content>
               <List>
                 <FlatList data={this.state.dataSource} renderItem={({ item }) => <ListItem thumbnail>
-                      <Left>
+                      {/* <Left>
                         <Thumbnail square source={require("../../../../assets/avatar.png")} />
-                      </Left>
+                      </Left> */}
                       <Body>
                         <Text>Trip #{item.id}</Text>
                         <Text note numberOfLines={1}>
@@ -303,44 +307,36 @@ export default class HomeScreen extends Component {
         </View>
       </View>;
 
-    const listingRenderDestination = <View style={{ flex: 1 }}>
-        <View style={{ flex: 0.4 }}>
-          <Image source={require("../../../../assets/dashboard.jpg")} resizeMode="cover" style={{ flex: 1, width: null, height: null }} />
-        </View>
-        <View style={{ flex: 0.6, backgroundColor: "#D2E9F7" }}>
-          <Container>
-            <Header>
-              <Body>
-                <Title>
-                  Hey {this.state.user_name}, here your destination list
-                </Title>
-              </Body>
-            </Header>
-            <Content>
-              <List>
-                <FlatList data={this.state.dataSourceDestination} renderItem={({ item }) => <ListItem thumbnail>
-                      <Left>
-                        <Thumbnail square source={require("../../../../assets/avatar.png")} />
-                      </Left>
-                      <Body>
-                        <Text>{item.name}</Text>
-                        <Text note numberOfLines={1}>
-                          {item.address}
-                        </Text>
-                      </Body>
-                      <Right>
-                        {item.status === "incomplete" ? <Button transparent onPress={() => this.handleButton(item.id, "complete")}>
-                            <Text>COMPLETE</Text>
-                          </Button> : <Button transparent onPress={() => this.handleButton(item.id, "incomplete")}>
-                            <Text>CANCEL</Text>
-                          </Button>}
-                      </Right>
-                    </ListItem>} keyExtractor={({ id }, index) => id.toString()} />
-              </List>                      
-            </Content>
-          </Container>
-        </View>
-      </View>;
+    const listingRenderDestination = <Container>
+        <Header>
+          <Body>
+            <Title>
+              Hey {this.state.user_name}, here your destination list
+            </Title>
+          </Body>
+        </Header>
+        <Content>
+          <List>
+            <FlatList extraData={this.state} data={this.state.dataSourceDestination} renderItem={({ item }) => <ListItem thumbnail>
+                  <Body>
+                    <Text>{item.name} {item.status}</Text>
+                    <Text note numberOfLines={1}>
+                      {item.address}
+                    </Text>
+                  </Body>
+                  <View style={{ paddingRight: 30 }}>
+                    {console.log("rendered ID => " + item.id + "and status" + item.status)}
+                    
+                    {item.status === "incomplete" 
+                      ? <CheckBox checked={false} onPress={() => this.handleButton(item.id, "complete")} /> 
+                      : <CheckBox checked={true} onPress={() => this.handleButton(item.id, "incomplete")} />}
+                  </View>
+                </ListItem>} keyExtractor={({ id }, index) => id.toString()} />
+          </List>
+        </Content>
+      </Container>;
+        
+      
       
     const tripTimer = <View style={{ flex: 1 }}>
         <View style={{ flex: 0.7 }}>
@@ -352,9 +348,9 @@ export default class HomeScreen extends Component {
               <Body>
                 <Title>On the way location Manajemen..</Title>
               </Body>
-              <FloatingAction actions={actions} onPressItem={name => {
+              {/* <FloatingAction actions={actions} onPressItem={name => {
                   console.log('Your location : 8.162721716621 , -152.029210191')  ;
-                }} color="rgb(246, 36, 89)" />
+                }} color="rgb(246, 36, 89)" /> */}
             </Header>
             <Content>
               <List>
@@ -386,21 +382,17 @@ export default class HomeScreen extends Component {
     const dataTest = <Text>tes</Text>
 
     const loader = (
-       <View style={styles.containerLoader}>
-        <View style={styles.loader}>
-          <Image style={styles.logo} source={require("../../../../assets/deliver-logo.png")} />
-        </View>
+      <View style={styles.containerActivity}>
+        <ActivityIndicator size={100} style={styles.activityIndicator} color={'#fff'} animating={true}/>
       </View>
-    )
+    );
 
     switch(this.state.pointerLanding){
       case 'listingRender':{
           if(this.state.isLoading){
             return(
-              <View style={{flex: 1, padding: 20}}>
-                <ActivityIndicator/>
-              </View>
-            )
+              loader
+            );
           }
         else{return listingRender}
         
@@ -408,10 +400,8 @@ export default class HomeScreen extends Component {
       case 'dataTest':{
         if(this.state.isLoading){
           return(
-              <View style={{flex: 1, padding: 20}}>
-                <ActivityIndicator/>
-              </View>
-            )
+              loader
+            );
         }else{
           return listingRenderDestination;
         }
@@ -422,6 +412,20 @@ export default class HomeScreen extends Component {
 }
 
 const styles = StyleSheet.create({
+  containerActivity: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    // marginTop: 70,
+    backgroundColor: "#3F51B5"
+  },
+  activityIndicator: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    height: 80,
+    backgroundColor: "#3F51B5"
+  },
   container: {
     flex: 1,
     justifyContent: "center",
